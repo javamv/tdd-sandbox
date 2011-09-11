@@ -6,12 +6,12 @@ package tetris;
  * Date: 11.09.10
  * Time: 12:56
  */
-public interface Board<T> {
+public interface Board<T, V> {
     T render();
 
     boolean blockIsFalling();
 
-    void drop(Block block, int row);
+    void drop(Block<V> block, int column);
 
     void tick();
 
