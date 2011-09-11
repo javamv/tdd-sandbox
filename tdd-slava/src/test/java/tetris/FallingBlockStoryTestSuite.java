@@ -9,7 +9,7 @@ import org.junit.runners.Suite;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.fail;
-import static tetris.FallingBlockStory.*;
+import static tetris.FallingBlockStoryTestSuite.*;
 
 /**
  * Created by IntelliJ IDEA.
@@ -19,7 +19,7 @@ import static tetris.FallingBlockStory.*;
  */
 @RunWith(Suite.class)
 @Suite.SuiteClasses({WhenABoardCreated.class, WhenTheBlockIsDropped.class, WhenTheBlockHitTheBottom.class, WhenABlockHitAnotherBlock.class})
-public class FallingBlockStory {
+public class FallingBlockStoryTestSuite {
 
     /*Falling Block Story:
     - When a board created: should be render in textual form filled by '*', no falling blocks
@@ -37,7 +37,6 @@ public class FallingBlockStory {
         }
 
         @Test
-        @Ignore
         public void shouldRenderInTextualForm() {
             assertThat(board.render(), is("" +
                     "***\n" +
