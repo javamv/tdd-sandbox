@@ -1,0 +1,5 @@
+Falling Block Story:
+    - When a board created: should be render in textual form filled by '*', no falling blocks
+    - When the block is dropped: block can be any simple letter, it should move one row per tick
+    - When the block hit the bottom: on the next tick new block is automatically dropped
+    - When a block hit another block: on the next tick new block is automatically dropped, game over if the block hit another block on the first row
